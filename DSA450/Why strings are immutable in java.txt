@@ -1,0 +1,33 @@
+The string is Immutable in Java because String objects are cached in the String pool. 
+
+Since cached String literals are shared between multiple clients there is always a risk, where one client's action would affect all another client. 
+
+For example, if one client changes the value of the String "Test" to "TEST", all other clients will also see that value as explained in the first example.
+ 
+Since caching of String objects was important from performance reason this risk was avoided by making String class Immutable. 
+
+At the same time, String was made final so that no one can compromise invariant of String class like Immutability, Caching, hashcode calculation, etc by extending and overriding behaviors.
+
+Another reason why String class is immutable could due due to HashMap.
+
+
+Since Strings are very popular as the HashMap key, it's important for them to be immutable so that they can retrieve the value object which was stored in HashMap.
+ 
+Since HashMap works in the principle of hashing, which requires the same has value to function properly. 
+
+Mutable String would produce two different hashcodes at the time of insertion and retrieval if contents of String was modified after insertion, potentially losing the value object in the map.
+
+If you are an Indian cricket fan, you may be able to correlate with my next sentence.
+
+ The string is VVS Laxman of Java, i.e. very very special class. 
+
+I have not seen a single Java program which is written without using String. 
+
+That's why a solid understanding of String is very important for a Java developer.
+
+
+And, If you are new to Java world then I also recommend you go through The Complete Java MasterClass on Udemy to learn Java in a better and more structured way. This is one of the best and up-to-date courses to learn Java online.
+
+
+
+ 
